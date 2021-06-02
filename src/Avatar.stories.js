@@ -50,11 +50,11 @@ Loading.args = {
 
 export const Large = (args) => (
   <div>
-    <h5>Large Anonymous</h5>
+    <h4>Large Anonymous</h4>
     <Avatar loading size="large" />
-    <h5>Large Tom Coleman</h5>
+    <h4>Large Tom Coleman</h4>
     <Avatar size="large" username="Tom Coleman" />
-    <h5>Large Tom Coleman with image</h5>
+    <h4>Large Tom Coleman with image</h4>
     <Avatar
       size="large"
       username="Tom Coleman"
