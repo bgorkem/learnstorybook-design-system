@@ -37,21 +37,24 @@ export const Initials = (args) => (
 );
 
 export const Loading = (args) => (
-    <div>
-      <Avatar {...args} size="large" />
-      <Avatar {...args} size="medium" />
-      <Avatar {...args} size="small" />
-      <Avatar {...args} size="tiny" />
-    </div>
-  );
-  Loading.args = {
-    loading: true,
-  };
+  <div>
+    <Avatar {...args} size="large" />
+    <Avatar {...args} size="medium" />
+    <Avatar {...args} size="small" />
+    <Avatar {...args} size="tiny" />
+  </div>
+);
+Loading.args = {
+  loading: true,
+};
 
 export const Large = (args) => (
   <div>
+    <h5>Large Anonymous</h5>
     <Avatar loading size="large" />
+    <h5>Large Tom Coleman</h5>
     <Avatar size="large" username="Tom Coleman" />
+    <h5>Large Tom Coleman with image</h5>
     <Avatar
       size="large"
       username="Tom Coleman"
@@ -59,3 +62,13 @@ export const Large = (args) => (
     />
   </div>
 );
+
+const Template = (args) => <Avatar {...args} />;
+
+export const Contros = Template.bind({});
+Contros.args = {
+  loading: false,
+  size: "tiny",
+  username: "Dominic Nguyen",
+  src: "https://avatars2.githubusercontent.com/u/263385",
+};
